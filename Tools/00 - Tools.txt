@@ -1,0 +1,12 @@
+VisualStudioCode
+Google Chrome
+Gimp - Video Editor
+Favicon.io - Editor de Favicons
+Unsplash ou Pexels - Fotos publicas
+W3C - Atualizaçõe sobre o HTML5 (Ex: Desuso de tags Obsoletas)
+HandBrake >> Editor de Vídeos.
+Adobe Color >> Gera paleta de Cores.
+Extensão Web Developer do Chrome>> Distingue Partes de um site em CSS3, Html5 e Js.
+Palleton >> Simulação de design de sites.
+Mockflow >> Layout
+DaFont >> baixar fontes 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias!</title>
+</head>
+<body>
+    <p>Link para <a href="index10.html" target="_self" rel="prev">página de audio</a></p>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Aprenderemos como adionar imagens que se adaptam com o tamanho do dispositivo (celular, tablet, notebook, TV)</p>
+    <p><h2>Alguns detalhes...</h2></p>
+    <ul>
+        <li>Usaremos a tag <mark>picture</mark> e detro dela a tag <mark>source</mark></li>
+        <li>Deve haver uma ordem correta entre as várias teclas source que serão geradas. Nesse caso, que usamos o max-width, devemos aplicar da imagem menor para a maior. </li>
+        <li>O método media recebe o tamanho máximo ou mínimo escolhido</li>
+            <ul type="square">
+                    <li>É bom que o valor mencionado seja uns 50 pixels maior (se for max) ou menor (se for min)</li>
+                    <li>Nesse caso a tag foi a seguinte: <mark>media=(mas-width:1050)</mark></li>
+            </ul>
+        <li>A tag <mark>srcset</mark> aplica a imagem de acordo com o tamanho</li>
+            <ul>
+                <li>Normalmente pensamos em 3 tamanhos diferentes</li>
+            </ul>
+        <li>A tag <mark>type</mark> aplica o tipo de mídia e o formato do arquivo</li>
+            <ul>
+                <li>Nesse caso o tipo de mídia foi imagem e o formato em png, logo <mark>type=image/png</mark></li>
+            </ul>
+
+    </ul>
+
+    <picture>
+        <source media="(max-width: 650 )" srcset="Imagens/foto_p.png" type="image/png">
+        <source media="(max-width: 1000px )" srcset="Imagens/foto_m.png" type="image/png">
+        <img src="Imagens/foto_g.png" alt="Imagem flexível">
+    </picture>
+</body>
+</html>

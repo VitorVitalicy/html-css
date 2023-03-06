@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+*{
+    font-family: cursive;
+}
+
+main{
+    padding:10px;
+    margin: auto;
+    width: 700px;
+    background-color: rgb(243, 237, 237);
+}
+
+h2{
+    background-color: antiquewhite;
+}
+
+mark{
+    background-color: aquamarine;
+}
+
+body{
+    background-image: linear-gradient(to bottom,rgb(108, 81, 230), rgb(93, 81, 146));
+    
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <p>Podemos usar mídias internas ou externas(desde que tenha autorizaão do dono)</p>
+    <p>Link para a aba de <a href="index9.html" target="_self" rel="next">páginas dinâmicas</a></p>
+    <hr>
+    <h1>Audio Interno</h1>
+    <h2>Alguns detalhes:</h2>
+    <ul>
+        <li>Nem todo navegador é compatível 100% com recurso de áudio. Tenha cuidado</li>
+        <li>Ás vezes é necessário criar arquivos de áudio em outros formatos além de MP3 comom o WAV e o OGG </li>
+        <li>O formato WAV é o mais pesado.</li>
+        <li>Arquivos de navegação não precisam ser pesados e de excelente qualidade. Esse tipo de qualidade normalmente se dá a arquivos de download.</li>
+    </ul>
+    <h2>Algumas Tags:</h2>
+    <ul>
+        <li><h3>A tag de audio simples com parâmetros:</h3></li>
+        <ul>
+            <li>A tag audio implementa o áudio no html</li>
+            <li>A tag controls libera o painel de controle do audio (pause/play e velocidade)</li>
+            <li>A tag autoplay inicia o audio a partir de um gatilho.</li>
+        </ul>
+        <li><h3>A tag de áudio em níveis de iniciação</h3></li>
+        <ul>
+            <li>Ao ser dicionado formas diferente de arquivos o sistema tentará, na ordem, iniciar um por um até o primeiro êxito. Inclusive ele também lê qualquer outra tag na ordem de cima pra baixo</li>
+            <li>Autoplay e preload tbm funcionam nesse formato de tag</li>
+            <li>Temos um método importante o preload com seus três parâmetros (auto, metadata, none</li>
+            <ul>
+                <li>O auto indica que o site só terminará de carregar quando todo o arquivo da imagem estover carregado (nãa é muito prático)</li>
+                <li>O metadata indica que o site terminará de carregar apenas com dados básicos do arquivo audio, como título, painel de controle e etc. Consome menos Mbps</li>
+                <li>O none não permite carregar nada do áudio até que ele seja acionado pelo usuário</li>
+            </ul>
+            <li>A tag loop reinicializa o audio automaticamente.</li>
+            <li>A tag type nem iniciadores padrão para cada tipo de arquivo. Nesse código foi comentado os outros dois principais tipos além de mp3 (wav e ogg)</li>
+        </ul>
+    </ul>
+    
+    <audio src="Msicas/Ice & Fire - King Canyon.mp3" controls autoplay></audio>
+    <audio controls autoplay loop>
+        <source src="Msicas/Ice & Fire - King Canyon.mp3" type="audio/mpeg">
+        <!-- Não temos esse tipo de arquivo mas ficaria da seguinte forma-->
+        <!-- source src="arquivo" type="audio/ogg" -->
+        <!-- souce src="arquivo" typr="audio/wav"-->
+    </audio>
+</body>
+</html>

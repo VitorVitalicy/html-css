@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Models</title>
+    <style>
+        main{
+            background-color: beige;
+        }
+
+        h1{
+            outline: 4px dashed green;
+            border: 5px solid black;
+            padding: 10px 5px 4px 3px;
+            margin: 10px auto;
+            
+            /*Um único valor vale para os 4 lados. dois valores vale para os sentidos verticais e horizontais*/
+            /*Paddings e margins tem função e funcionamento semelhantes */
+            /* Já os borders e outlines tem suas semelhanças também.*/
+        }
+            
+        
+
+        h2{
+            background-color: rgba(60, 134, 153, 0.466);
+            width: 256px;
+        }
+
+        img{
+            height: 500px;
+            width: 900px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Box Models</h1>
+        <p>Está relacionado com a hierarquia gráfica dentro de uma pagina.</p>
+        <p>Todo Elemento Visível na tela é uma caixa.</p>
+        <p>Seletores do CSS agem sobre toda a caixa que lhe foi associado</p>
+        <h2>Anatomia de uma caixa:</h2>
+        <ul>
+            <li>Conteúdo</li>
+            <li>Dimensões de conteúdo: height and width</li>
+            <li>Border: borda da caixa (style: dashed, dotted, double, groove, solid )</li>
+            <li>
+                Padding: distância entre a borda e o conteúdo (top, right, bottom, left---sentido horário de atribuição)
+            </li>
+            <li>Margin: distância entre a borda e outra caixa. (top, right, bottom, left) </li>
+            <li>Outline: contorno, borda mais exterior. ()</li>
+        </ul>
+        <h2>Ordem para o uso das short hands!</h2>
+        <ol>
+            <li>width</li>
+            <li>style</li>
+            <li>color</li>
+        </ol>
+        <hr>
+        <ol>
+            <li>top</li>
+            <li>right</li>
+            <li>bottom</li>
+            <li>left</li>
+        </ol>
+        <h2>Tipos de caixas:</h2>
+        <ul>
+            <li>Box-level: </li>
+            <ol>
+                <li>Ocupa toda area disponível</li>
+                <li>Formata tags(outras caixas) com paragrafo ou quebra de linha respeitando as configurações de cada Tag.</li>
+                <li>Exemplos: div, h1, p, main, nav, header, video, form, article, aside, footer </li>
+            </ol>
+            <li>Inline-level:</li>
+            <ol>
+                <li>Não quebra a linha e para isso ele reajusta as propriedes das tags se necessário. </li>
+                <li>Exemplos: span, links, a, samll, em, label, input, select, sup, sub, button, code, strong</li>
+            </ol>
+        </ul>
+        <h2>Ferramenta do Chrome! Dev Tools</h2>
+        <p>Atalho: Ctrl + Shift + I</p>
+        <p>Ou ainda de acordo com a imagem...</p>
+        <img src="2023-03-01.png" alt="Imagem da tela">
+        <p>Com essa ferramenta se torna mais fácil analisar e manipular os códigos sem alterar o código fonte.</p>
+    </main>
+</body>
+</html>

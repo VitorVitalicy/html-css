@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: 'Natal';
+            src: url('Fontes_Especiais/MerryChristmasStar.ttf') format('truetype');
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <main><h1>Tipografias</h1>
+    <p>Estudo de qual forma de letras usar.</p>
+    <p>Cada letra de uma fonte é chamada de glifo</p>
+    <p>O conjunto de <strong>glifos</strong> é a fonte.</p>
+    <p>Algumas fontes tem famílias tipográficas com variações de uma mesma letra.</p>
+    <h2>Alturas:</h2>
+    <ul>
+        <li>Altura X: Altura da letra minúscula, baseada na altura do x minúsculo.</li>
+        <li>Altura das letras maiúsculas</li>
+        <li>Altura Descendente: Das letras que vazam para baixo como o "g" ou o "q"</li>
+        <li>Altura Ascendente: Altura das letras que vazam pra cima como "b" ou "d"</li>
+        <li>Corpo: É a altura total</li>
+    </ul>
+    <h2>Itens anatômicos geométricos:</h2>
+    <ul>
+        <li>Serifa: Pezinho da letra. gera um alinhamento das palavras e torna o texto mais alinhado.</li>
+        <li>Haste: região entre o pé e  cabeça da letraa. </li>
+        <li>Filete: Uni duas hastes linearmente</li>
+        <li>arco: uni curvilinearmente duas hastes</li>
+        <li>esporão:</li>
+        <li>Vértice</li>
+        <li>Terminal</li>
+        <li>Braço, sai de uma haste ou de outro braço</li>
+        <li>perna</li>
+        <li>pé</li>
+        <li>espinha</li>
+        <li>barriga</li>
+        <li>Olho: buraco dentri=o das letras.</li>
+        <li>Orelha</li>
+        <li>Cauda</li>
+    </ul>
+    <h2>Categorias de Fontes! (font-family)</h2>
+    <ul>
+        <li style="font-family: serif; font-size: 25px;">Serifadas: Para textos longos impressos.</li>
+        <li style="font-family: sans-serif; font-size: 22px;" >Sans-serif: Para texto longos virtualmente</li>
+        <li style="font-family: monospace; font-size: 22px;">Monoespaçada: Todas as letra ocupam o mesmo espaço lateral(largura), incluindo virgula e espaços</li>
+        <li >Handwriting: Simulação da Grafia Humana</li>
+        <li>Display: Personalizado</li>
+    </ul>
+    <h2>Safe Combinations:</h2>
+    <p>Conjunto de fontes parecidas que funcionam como titular e reservas. Se a primiera escolha nn for possível de representar, é tentado a segunda, terceira, quarta...</p>
+    <p>É importante terminar as safes Combinations com uma das 5 categorias de fontes vistas anteriormente, pois assim o próprio computador consegue assimiliar um tipo genérico de fonte.</p>
+    <p>Existe uma lista no site: <a href="https://www.w3schools.com/cssref/css_websafe_fonts.php" target="_blank" rel="external">w3schools</a></p>
+    <h2>Tamanhos - Size</h2>
+    <p>A recomendaçõa oficial é o uso do <mark>px e em</mark>. Relação: 16px = 1em (na maiorida dos casos).</p>
+    <p>O tamanho padrão dos navegadores é 16px</p>
+    <ul>
+        <li>
+            <h3>Medidas absolutas</h3>
+            <ul type="square">
+                <li>cm</li>
+                <li>mm</li>
+                <li>px</li>
+                <li>in</li>
+                <li>pt</li>
+                <li>pc</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Medidas relativas</h3>
+            <ul type="square">
+                <li>em - Altura do M maiúsculo</li>
+                <li>ex - Altura do x minúsculo</li>
+                <li>rem - altura do M maisúsculo relativo á fonte atual.</li>
+                <li>vw - Largura da tela</li>
+                <li>%</li>
+            </ul>
+        </li>
+    </ul>
+    <h2>Peso de uma fonte</h2>
+    <p>Como se fosse a grossura de uma letra</p>
+    <p>Conjuntamente à tag <mark>font-weight</mark>, podemos usar as seguintes opções...</p>
+    <ul>
+        <li>lighter</li>
+        <li>normal</li>
+        <li>bold</li>
+        <li>bolder</li>
+        <li>Numérico: 100, 200, 300, 400, 500, 600, 700, 800, 900</li>
+    </ul>
+    <h2>Estilo da fonte</h2>
+    <p>Usaremos a tag <mark>font-style</mark></p>
+    <ul>
+        <li>italic</li>
+        <li>normal</li>
+    </ul>
+    <p>O a tag <mark>text-decoration</mark></p>
+    <ul>
+        <li>underline</li>
+        <li>overline</li>
+        <li>line-trough - riscado no meio.</li>
+    </ul>
+    <h2>Condensamento de tags! (Shorthand Font)</h2>
+    <p>Ordem: style, weight, size, family</p>
+    <p>exemplo</p>
+    <p>font: italic bolder 3em Work Suns, sun-serif;</p>
+    <h2>Fontes com Google Fonts</h2>
+    <ol>
+        <li>
+            <p>Acessar o link do <a href="https://fonts.google.com/" target="_blank" rel="external"> Google Fonts</a></p>
+        </li>
+        <li>
+            <p>Escolha sua fonte</p>
+        </li>
+        <li>Podemos importar, gerando uma dependência em tempo real. Agora o seu site depende do Google e sua contínua conexão.</li>
+        <li>Também podemos baixar e ter a fonte no próprio servidor, diminuindo a dependência do seu site.</li>
+    </ol>
+    <h2 style="font-family: 'Natal';">Fontes Externas Baixadas.</h2>
+    <p>Sites: <a href="https://www.dafont.com/pt/" target="_blank" rel="external">DaFont</a>, <a href="https://www.fontspace.com/" target="_blank" rel="external">FontSpace</a></p>
+    <h3>Formatos</h3>
+    <p>Sempre será necessário pesquisar com cuidado antes pois esses dados podem variar.</p>
+    <ul>
+        <li>Opentyoe - Geralmente usado com otf</li>
+        <li>Truetype - Geralmente usado com ttf</li>
+        <li>Embedded-opentype >></li>
+        <li>Truetype-aat >></li>
+        <li>svg >></li>
+    </ul>
+    <h2>Obtensão de Fontes em sites.</h2>
+    <h3>Fontes fora de imagens</h3>
+    <p>Assim como para imagens, existe uma extensão Google Chrome que detecta os tipos de fontes</p>
+    <p>Usaremos o <mark>Fonts Ninja</mark> </p>
+    <h3>Fontes em imagens.</h3>
+    <ul>
+        <li><h4><a href="https://www.whatfontis.com/" target="_blank" rel="external">Font Finder</a></h4>
+        <p>Interpreta fontes de um arquivo de mídia. As vezes é necessário orgganizar a imagem para que a fonte fique mais nítida. Pra isso o próprio site oferece ferramentas de edição.</p>
+        </li>
+        <li>
+            <a href="https://www.fontsquirrel.com/" target="_blank" rel="external">Font Squirrel</a>
+        </li>
+        <li><a href="https://www.myfonts.com/" target="_blank" rel="external">My Fonts</a></li>
+    </ul>
+    
+   
+</main>
+</body>
+</html>

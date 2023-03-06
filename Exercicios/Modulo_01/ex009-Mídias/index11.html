@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+    <p>link para a <a href="index9.html" target="_self">página de imagens</a></p>
+    <p>link para a <a href="index10.html" taregt="_self">página de áudio</a></p>
+    <h1>Vídeos</h1>
+    <h2>Tipos de formatos:</h2>
+    <ul type="square">
+        <li>mp4</li>
+        <li>m4v ou mkv</li>
+        <li>webm</li>
+        <li>ogv</li>
+    </ul>
+    <h2><mark>Cuidados com os direitos autorais!</mark></h2>
+    <h2> Considerações:</h2>
+    <ul>
+        <li>Sempre tenha todos os formatos para download. Isso deixa seu site mais flexível( existe até uma tabela de compatibilidade em navegadores).</li>
+        <li>A ordem que vc coloca os vídeos faz diferença.</li>
+        <li>Handbreak é um bom editor de vídeo(mp4, m4v e webm). Ele lança os vídeos compilados na pasta de vídeos do PC.</li>
+        <li>Existe um conversor de OGV no google "Online" convert.</li>
+        <li></li>
+    </ul>
+    <hr><h2>Inserindo vídeos hospedados Localmente.</h2>
+    <!-- Forma simples de colocar: <video src="link" width="a" height="b" controls-->
+    <video width="500" height="600" poster="Imagens/Capa.jpg" controls autoplay loop>
+        <source src="Videos/fundo.mp4" type="video/mp4">
+        <source src="Videos/Fundo.webm" type="video/webm">
+        <source src="Videos/Fundo.mkv" type="video/mp4">
+        <p>Seu navegador nn tem compatibilidade de reprodução de vídeos.</p>
+    </video>
+    <hr>
+    <h2>Inserindo vídeos Hospedados externamente</h2>
+    <h3>Inserindo vídeo do Youtube</h3>
+    <p>Consome dados diretamente do Youtube. Além disso, o vídeo se torna exclusivamente <mark>público</mark>. Para formatos de vídeos privados exitem outras plataformas como o <mark>Vimeo</mark> <a href="https://vimeo.com" target="_blank" rel="external">link</a></p>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9eThXjopUm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

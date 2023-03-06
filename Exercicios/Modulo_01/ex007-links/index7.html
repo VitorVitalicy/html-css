@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Links Externos</h1>
+    <ul>
+        <li>Puxamos a tag de ancoragem <mark>"a"</mark> com seu método principal <mark>"href"</mark> que descreve o link de acesso.</li>
+        <li>O primeiro abre um link que sobrepõe o nosso site.</li>
+        <li>Usando os métodos <mark>"target = _blank"</mark> e <mark>"rel = external"</mark>, o segundo link irá abrir em outra guia.</li>
+        <li>A segunda forma é a mais recomendada.</li>
+        <li>Para links sem o aval do desenvolvedor ou propagandas patrocinadas, recomenda-se usar o método <mark>"rel = nofollow"</mark> que restringe opções dinâmicas de navegação. Por isso que na hora de anunciar um produto existe a opção nofollow e defollow.</li>
+    </ul>
+    <h2>Exemplo:</h2>
+    <p>Esse é o <a href="http://www.youtube.com/">link para o Youtube.</a> (Sobrescreverá o site)</p>
+    <p> Esse é o <a href="http://www.instagram.com/" target="_blank" rel="external">Link para entrar no instagram</a>(Abrirá uma nova guia)</p>
+
+    <hr>
+    <h1>Links Internos</h1>
+    <ul>
+        <li>Ligação entre páginas do próprio servidor</li>
+        <li>Normalmente páginas do mesmo site se sobescrevem e não abrem uma nova guia. Para isso usaremos o comando <mark>"target = _self"</mark></li>
+        <li>O primeiro exemplo é de uma página que pertence ao mesmo diretório da principal</li>
+        <li>O segundo exemplo é de uma página que está em outro diretório do explorador de arquivos.</li>
+        <li>Para navegar entre paginas internas, usado ainda o método:</li>
+        <ul>
+            <li><mark>"rel=next"</mark> para mencionar ao Google que a página linkada é a próxima na hierarquia do seu site</li>
+            <li><mark>"rel = prev"</mark> para mencionar ao google que a página linkada é a imediatemente anterior na hierarquia do seu site</li>
+        </ul>
+    </ul>
+    <h2>exemplo:</h2>
+    <p>Esse é o link para levar até a <a href="pag002.html" target="_self" rel="next">Página 02 do próprio site(Mesmo diretório)</a></p>
+    <p>Esse link nos leva para a <a href="paginas adicionais/pag003.html" target="_self" >Página 003 do site (Diretório diferente)</a></p>
+    <hr>
+    <h1>Links para Downloads</h1>
+    <p>Seguindo a mesma lógica:</p>
+    <ul>
+        <li>Escreveremos em link todo o endereço do arquivo a ser baixado</li>
+        <li>na tag "a" usaremos o o método "download" seguido do nome do arquivo</li>
+        <li>Ainda usaremos depois o método "type" com a assinatura ideal para cada tipo de arquivo (pdf, zip, mp3...)</li>
+        <li>A lista com todas as assinaturas está nesse site: <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">https://www.iana.org/assignments/media-types/media-types.xhtml</a></li>
+    </ul>
+    <ul>
+        <li><a href="Biblioteca de Downloads/11.1_-_Exerccios_-_Arquivos (1).pdf" download="11.1_-_Exerccios_-_Arquivos (1).pdf" type="application/pdf">Link para baixar meu arquivo em pdf</a></li>
+        <li><a href="Biblioteca de Downloads/archive.zip" download="archive.zip" type="application/zip">Link para baixar o arquivo ZIP</a></li>
+    </ul>
+    <</li>
+</body>
+</html>

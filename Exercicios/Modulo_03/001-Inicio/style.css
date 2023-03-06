@@ -1,0 +1,20 @@
+@charset 'UTF-8';
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+h2{
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+mark{
+    background-color: rgba(77, 77, 252, 0.705);
+}

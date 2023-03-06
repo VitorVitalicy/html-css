@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+body{
+    background-color: bisque;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    color: rgb(70, 52, 230);
+    background-color: rgb(59, 214, 136);
+}
+
+#math{
+    color: crimson;
+}
+
+.dica{
+    font-size: large;
+    font-weight: 700-200;
+}
+
+div{
+    background-color: aliceblue;
+    border: 1px solid black;
+    text-align: center;
+    display: inline-block;
+    height: 300px;
+    width: 600px;
+
+}
+
+div:hover{
+    background-color: blueviolet;
+    font-size:0.4in ;
+}
+
+div > p{
+    display: none;
+}
+
+div:hover > p{
+    display:block;
+}
+
+div:hover > .hider{
+    display: none;
+}
+
+a{
+    color: aqua;
+    text-decoration: none;
+    font-weight: 900;
+
+}
+
+a:visited{
+    color: brown;
+}
+
+a:hover{
+    color: black;
+}
+
+a:active{
+    color: blueviolet;
+}
+
+a::after{
+    content: "Isso é um link";
+    color: aliceblue;
+}
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-image: linear-gradient(to bottom,#ff6600c4, #b64c068a);
+            background-attachment: fixed;
+        }
+
+        header{
+            text-align: center;
+            background-color: bisque;
+        }
+
+        main{
+            font-family: cursive;
+            background-color: #0237d675;
+            border: 4px solid #021b66;
+            margin: auto;
+            width: 800px;height: auto;
+            box-shadow: 2px 2px 10px black;
+            border-radius: 2%;
+            padding: 5px;
+        }
+
+        footer{
+            text-align: center;
+            font-size: medium;
+            background-color: rgb(41, 40, 40);
+            color: white;
+            fi
+        }
+
+        mark{
+            color: rgb(160, 0, 0);
+            background-color: dimgray;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+
+        span{
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Como organizar seu site</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Temos os grupos principais:</h2>
+            <ul>
+                <li>header: cabeçalho</li>
+                <li>main: conteudo principal</li>
+                <li>footer: rodapé</li>
+            </ul>
+            <h2>Temos os grupos mais internos e específicos</h2>
+            <ul>
+                <li>nav</li>
+                <li>article</li>
+                <li>aside</li>
+                <li>div</li>
+            </ul>
+        </article>
+        <article>
+            <h2>A esses grupos podemos adicionar sombras</h2>
+            <ul>
+                <li>A tag usada é o <mark>box-shadow</mark> na forma short hads com os atributos (largura-px, altura-px, espalhamento-px e cor)</li>
+                <li>Dentro do Dev tools do Chrome ainda é possível configurá-la melhor: selecione a tag » va nos 3 pontinhos » "add box-shdow" » e configure de todas as formas possíveis.  </li>
+            </ul>
+            <h2>Também existe o raio da borda</h2>
+            <ul>
+                <li>vamos utilizar a tag <mark>border-radius</mark>. E é claro com as variações <span>top, right, bottom, left.</span></li>
+            </ul>
+            <h2>Bordas personalizadas</h2>
+            <ul>
+                <li><mark>border-image-source</mark>: Adiciona uma url de imagem como parâmetro</li>
+                <li><mark>border-image-slice </mark>: Adiciona a derformação da imagem ao decorrrer da borda (sem unidade de medida)</li>
+                <li><mark>border-image-repeat</mark>: repeat como parâmetro.</li>
+                <li>
+                    <h3>Short Hand</h3>
+                    <ul>
+                        <li>border-image: url('') nº  repeat;</li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <p>Desenvolvidor por Vitor Antônio</p>
+    </footer>
+</body>
+</html>
