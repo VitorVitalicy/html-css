@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpaper</title>
+    <style>
+        div.square{
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 15px;
+            background-color: gray;
+            width: 300px;
+            height: 300px;
+            
+        }
+
+        div#wp{
+            
+        }
+
+        body{
+
+            height: 97vh;
+
+            /* Vale para imagens locais e via outros servidores por url*/
+            background-image: url('imagens/wallpaper002.jpg');
+
+
+            background-size: 1350px 700px;
+
+            /*Aceita repat, no-repeat, repeat-x e repeat-y*/
+            background-repeat: no-repeat;
+
+            /*
+             Assume como parametro posições da imagem original como ponto de ancoragem: 
+                PRIMEIRO COLUNA ( left, center, right)
+                DEPOIS A LINHA (top, center, bottom)
+            */
+            background-position: center center ;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="square">
+
+    </div>
+
+    <div class="square" id="wp">
+        
+    </div>
+
+    <div class="square">
+        
+    </div>
+</body>
+</html>

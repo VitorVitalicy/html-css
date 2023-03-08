@@ -11,3 +11,4 @@ Palleton >> Simulação de design de sites.
 Mockflow >> Layout
 DaFont >> baixar fontes 
 QR Code Generator >> Gerador de QR code gratuito 
+Google Adds >> Monetizador, e configurador de recursos de disponibilidade.
