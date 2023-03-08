@@ -10,3 +10,4 @@ Extensão Web Developer do Chrome>> Distingue Partes de um site em CSS3, Html5 e
 Palleton >> Simulação de design de sites.
 Mockflow >> Layout
 DaFont >> baixar fontes 
+QR Code Generator >> Gerador de QR code gratuito 
