@@ -3,7 +3,7 @@
 /* COnstrução de Fontes Externas! */
 @font-face {
     font-family: 'Animado';
-    src: url('Dibujos\ Animados.otf') format(opentype);
+    src: url('../font/Dibujos\ Animados.otf') format(opentype);
 }
 
 /*Variáveis em CSS3: */
