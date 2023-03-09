@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wallpaper</title>
     <style>
+
+        *{
+            margin: 0px;
+        }
         div.square{
             display: inline-block;
             border: 2px solid black;
@@ -17,18 +21,24 @@
         }
 
         div#wp{
-            
+            background-color: gray;
         }
 
-        body{
+        header{
 
-            height: 97vh;
+            padding: 15px;
+
+            height: 400px;
+
+            margin: auto ;
+
+
+            /* Mesmo com wallpapers é interessante e atencioso da parte do desenvolvedor que exista uma cor de fundo. */
+            background-color: black;
+
 
             /* Vale para imagens locais e via outros servidores por url*/
             background-image: url('imagens/wallpaper002.jpg');
-
-
-            background-size: 1350px 700px;
 
             /*Aceita repat, no-repeat, repeat-x e repeat-y*/
             background-repeat: no-repeat;
@@ -40,21 +50,89 @@
             */
             background-position: center center ;
 
+
+            /* 
+            Primeiro Largura (width) depois altura (height)
+            Existem alguns parâmetros aceitos como:
+            - Porcentagem 
+            - pixels
+            - Auto >> Criar bordas normalmente.
+            - contain >> Valoriza a escala original da foto
+            - cover >> Adequa bem a imagem à tela sem o scroll.
+            */
+            background-size: cover;
+
+            /*
+             Configurações de vínculo 
+            Seu By defalut é scrool.
+            Existem outra opção que se chama fixed: mesmo no scrool a imagem não muda.
+
+            */
+            background-attachment: fixed;
+
+            /* Existem a seqguinte short-hand:
+                Unifica o color - image - position - repeat - size - attachment
+
+                DETALHE: Size ainda não funciona.
+            
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+
+            background-size: cover;
+
+
+
+
         }
+
+
+        /*
+        Para posicionar uma caixa é necessário a lógica de container e conteúdo.
+        Assim a posição centralizada em % segue a formula:
+            [(height container) - (height conteudo)]/(2 * height total)        
+        */
+        section#container{
+            position: relative;
+            width: auto;
+            height: 40vh;
+            background-color: blueviolet;
+            padding: 20px;
+            margin: auto;
+        }
+
+        article#conteudo{
+            position: absolute;
+            text-align: center;
+            padding: 1px;
+            right: 50%;
+            top: 50%;
+            width: 100px;
+            height: auto;
+            background-color: cornflowerblue;
+
+            transform: translate(50% 50%);
+        }
+
         
     </style>
 </head>
 <body>
-    <div class="square">
-
-    </div>
-
-    <div class="square" id="wp">
+    <header>
+        <div class="square">
+        </div>
+        <div class="square" id="wp">
         
-    </div>
-
-    <div class="square">
+        </div>
+        <div class="square">
         
-    </div>
+        </div>
+
+        <section id="container">
+            <article id="conteudo">
+                <p><h1> Bom dia !</h1></p>
+            </article>
+        </section>
+    </header>
 </body>
 </html>
