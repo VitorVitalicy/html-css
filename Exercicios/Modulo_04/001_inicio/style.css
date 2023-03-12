@@ -1,0 +1,61 @@
+@charset 'Utf-8';
+
+*{
+    margin: 0px;
+}
+
+body{
+    background-color: rgba(255, 182, 193, 0.582);
+}
+
+header{
+    background-image: linear-gradient(to bottom, rgb(48, 48, 241), rgb(193, 70, 241));
+    padding: 20px;
+}
+
+header h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header ul{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+main{
+    background-color: aliceblue;
+    font-size: 1.3em;
+    line-height: 35px;
+    margin: auto;
+    width: 80vw;
+    padding: 20px;
+    box-shadow: 1px 1px 10px gray;
+}
+
+h2{
+    background-image: linear-gradient(to right, rgba(225, 51, 248, 0.596), transparent);
+    margin: 10px;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+mark{
+    background-color: aquamarine;
+}
+
+iframe#ugasite{
+    width: 500px;
+    height: 400px;
+    display: block;
+    margin: auto;
+}
+
+iframe#links{
+    width: 600px;
+    height: 450px;
+    display: block;
+    margin: auto;
+}

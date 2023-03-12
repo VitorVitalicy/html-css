@@ -4,22 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Inicio Modulo 04</title>
 </head>
 <body>
     <header>
         <h1>O que vamos aprender?</h1>
-    </header>
-    <main>
         <div>
             <ul>
-                <li> Allframe </li>
-                <li> Projeto Redes sociais</li>
-                <li> Formularios</li>
+                <li> Iframe </li>
+                <li> Projeto - Redes sociais</li>
+                <li> Formulários</li>
                 <li> MediaQuere</li>
                 <li> Projeto Tela Login 100% responsivo</li>
             </ul>
         </div>
+    </header>
+
+    <main>
+       <h2> O que é o Iframe?</h2>
+       <p>
+        Conteúdo inline que permite visibilidade de mídia local ou remota.
+       </p>
+       <p>
+            Este é um exemplo de Iframe
+            <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
+        </p>
+        <p>
+            <h3> Detalhes importantes !</h3>
+            <ul>
+                <li> Cuidado com os <mark>direitos autorais</mark> po!</li>
+                <li>Existem alguns sites com proteção para <mark>não serem acessados via iframe</mark> como por exemplo o próprio site do google e o youtube.</li>
+                <li> Dentro da tag iframe é possível colocar informações que aparecerão somente quando <mark>não for possível abrir o iframe por motivos de compatibilidade.</mark></li>
+                <li>Tamanho padrão de 300 x 150 (largura x altura)</li>
+                <li> O parâmetro scolling é sobre a presença da <mark>barra de rolagem</mark>  e admite valores: auto, yes, no</li>
+                <li> O metodo frameborder é binário e aceita zero ou não zero.</li>
+            </ul>
+        </p>
+        <p>
+            <h3> Iframe com conteúdo local</h3>
+            <p>Basta adicionar o endereço local.</p>
+            <iframe id="ugasite" src="../../Modulo_02/ex008-UgaSite/index.html" frameborder="1"></iframe>
+        </p>
+        <p>
+            <h3> Iframe com navegação interna!</h3>
+            <p>
+                Temos 3 link que abrirão no iframe abaixo:
+                <ul>
+                    <li><a href="../../Modulo_03/004-tabelas/index.html" target="frame">Primeiro link</a></li>
+                    <li><a href="../../Modulo_03/003-project/index.html" target="frame">Segundo link</a></li>
+                    <li><a href="../../Modulo_01/ex010-site_com_videos-DESAFIO/desafio.html" target="frame">Terceiro link</a></li>
+                </ul>
+                <iframe id="links" name="frame" src="https://www.cursoemvideo.com" frameborder="1"></iframe>
+            </p>
+            <p style="text-indent: 40px;">
+                Para isso, nomeamos um iframe com ( name="...") e sincronizamos com a tag de link através do metodo ( target="name")
+            </p>
+            <p style="text-indent: 40px;">
+                Podemos redirecionar links para o iframe e ainda ter um link inicial padrão nele.
+            </p>
+        </p>
     </main>
 </body>
 </html>
