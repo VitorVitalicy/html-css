@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabelas</title>
+</head>
+<body>
+    <head>
+        <h1> Tabelas</h1>
+    </head>
+    <main>
+        <h2> Estrututra de uma tabela</h2>
+        <pre>
+    Table = tabela
+        tr = linha de tabela
+            table header = cabeçalho de tabela
+            table data = dados de tabela
+        </pre>
+        
+        <hr>
+        <h2 style="color: rgb(0, 17, 255);">Exemplo: </h2>
+        <div>
+            <table>
+                <tr class="par">
+                    <td> 1 </td>
+                    <td> 2 </td>
+                    <td> 3 </td>
+                </tr>
+                <tr>
+                    <td> 4 </td>
+                    <td> 5 </td>
+                    <td> 6 </td>
+                </tr>
+                <tr class="par">
+                    <td> 7 </td>
+                    <td> 8 </td>
+                    <td> 9 </td>
+                </tr>
+                <tr>
+                    <td> 10 </td>
+                    <td> 11 </td>
+                    <td> 12 </td>
+                </tr>
+            </table>
+        </div>
+
+        <hr>
+        <h2> Tabelas mais complexas</h2>
+        <pre>
+    Table=
+        Caption = Descrição da Tabela
+        THead=
+            tr, td e th.
+        TBody=
+            tr, td e th.
+        TFoot=
+            tr, td e th.
+
+        Escopo = Define a semântica de quais dados pertencem a quais títulos.
+            scope="col"       >>  Título que engloba uma coluna.
+            scope="colgroup"  >>  Título que engloba várias colunas.
+            scope="row"       >>  Título que engloba uma linha.
+            scope="rowgroup"  >>  Título que engloba várias linhas.
+
+        Ainda assim é possível zebrar as linhas da lista com a pseudoclass nth-child(2n)
+        </pre>
+
+        <h2 style="color: rgb(0, 17, 255);">Exemplo: </h2>
+        <div>
+            <table class="complex">
+                <caption>
+                    Tabela das Cidades
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Cidades</th>
+                        <th scope="col"> População</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>São paulo</td>
+                        <td> 45.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Goiânia</td>
+                        <td> 4.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Cuiabá</td>
+                        <td> 2.675.908</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row"> Total de habitantes</th>
+                        <td> 51.675.908 </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <hr>
+        <h2> Necessidade de Títulos fixos em uma tabela</h2>
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum enim quod, eius temporibus repellendus perferendis asperiores, doloremque laudantium harum, suscipit ut tempora iste accusantium vel vero cumque in earum?</p>
+
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero distinctio id vitae commodi in consequatur ipsam reiciendis pr</p>aesentium debitis modi possimus veniam illum, numquam quos, sequi <p>
+            nihil. Repellendus, totam?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sint eligendi? Aut error dicta unde aperiam fugiat expedita impedit distinctio non doloremque illum libero molestias maxime, earum accusantium. Repel
+        </p>lendus, non.
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quo, itaque c</p>onsectetur praesentium minus voluptas odio voluptate iusto <p>
+            odit vel, excepturi sit nulla ipsam libero quis animi quam, soluta iste!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt atque a
+        </p> earum enim cupiditate vero natus nesciunt deleniti accusamus <p>assumenda, reprehenderit, qui odit. Atque iusto consequatur nulla quis ad od</p>io?
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur numquam culpa praesentium perferendis eligendi error in ut, possimus eius velit rem, voluptatibus temporibus libero laborum hic incidunt repellendus adipisci sequi!</p>
+
+        L<p>orem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ea aspernatur autem ducimus, sequi, consequatur quia deserunt distinctio labore animi, eaque iure? Laboriosam tempora, iure accusamus assumenda sint </p>voluptatum nesciunt?
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, iure. Odit sequi sit blanditiis suscipit, ipsa quaerat quia commodi repudiandae similique magnam sed non beatae rem alias cum numquam tempori</p>bus?
+
+        <hr>
+
+        <h2> Tabelas com mesclagens</h2>
+        <p>Utilizamos o rowspan ou o colspan com parâmatros em relação a quantidade de células ocupadas</p>
+
+        <div>
+            <table>
+                <!-- Com a tag colgroup podemos escrever a quantidade de colunas e dar características específicas para elas.
+                Ainda assim é possível modificar grupos de colunas também usando o parâmetro span="n" -->
+                <colgroup>
+                    <col class="paises">
+                    <col class="trofeus" span="2">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="row">País</th>
+                        <th colspan="2" scope="rowgroup"> Titulos na copa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Brasil</td>
+                        <td> 5 Trofeus</td>
+                        <td> 2 Vices</td>
+                    </tr>
+                    <tr>
+                        <td>Italia</td>
+                        <td> 4 Troféus</td>
+                        <td> 2 Vices </td>
+                    </tr>
+                    <tr>
+                        <td>Alemanha</td>
+                        <td> 4 troféus </td>
+                        <td> 4 Vices </td>
+                    </tr>
+                    <tr>
+                        <td> Argentina</td>
+                        <td> 3 Troféus</td>
+                        <td> 3 Vices </td>
+                    </tr>
+                    <tr>
+                        <td> França</td>
+                        <td> 2 Troféus</td>
+                        <td> 2 vices </td>
+                    </tr>
+                    <tr>
+                        <td>Uruguai</td>
+                        <td> 2 Troféus</td>
+                        <td> Nenhum Vice</td>
+                    </tr>
+                    <tr>
+                        <td>Inglaterra</td>
+                        <td> 1 Troféu kk</td>
+                        <td> kk</td>
+                    </tr>
+                    <tr>
+                        <td>Espanha</td>
+                        <td> 1 Trofeu</td>
+                        <td> Nenhum vice</td>
+                    </tr>
+                    <tr>
+                        <td>Holanda</td>
+                        <td> 0 Troféus</td>
+                        <td> 3 vices</td>
+                    </tr>
+                    <tr>
+                        <td>Hungria</td>
+                        <td> 0 troféus</td>
+                        <td> 2 vices </td>
+                    </tr>
+                    <tr>
+                        <td> Tchecoslovaquia</td>
+                        <td> 0 Títulos</td>
+                        <td> 2 vice</td>
+                    </tr>
+                    <tr>
+                        <td>Suécia</td>
+                        <td>0 troféus</td>
+                        <td> 1 vice</td>
+                    </tr>
+                    <tr>
+                        <td>Croácia</td>
+                        <td> 0 trofeus</td>
+                        <td> 1 vice</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
