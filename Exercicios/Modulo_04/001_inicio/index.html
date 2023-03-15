@@ -55,13 +55,17 @@
                     <li><a href="../../Modulo_03/003-project/index.html" target="frame">Segundo link</a></li>
                     <li><a href="../../Modulo_01/ex010-site_com_videos-DESAFIO/desafio.html" target="frame">Terceiro link</a></li>
                 </ul>
-                <iframe id="links" name="frame" src="https://www.cursoemvideo.com" frameborder="1"></iframe>
+                <iframe id="links" name="frame" src="https://www.cursoemvideo.com" frameborder="1">
+                </iframe>
+
+                <iframe id="links" name="frame" srcdoc="<p> Exemplo de conteúdo html dentro do iframe</p>" frameborder="1">
+                </iframe>
             </p>
             <p style="text-indent: 40px;">
                 Para isso, nomeamos um iframe com ( name="...") e sincronizamos com a tag de link através do metodo ( target="name")
             </p>
             <p style="text-indent: 40px;">
-                Podemos redirecionar links para o iframe e ainda ter um link inicial padrão nele.
+                Podemos redirecionar links para o iframe e ainda ter um link inicial padrão nele -- usando o metodo srcdoc podemos inseir conteúdo html dentro do espaço iframe. 
             </p>
         </p>
     </main>
