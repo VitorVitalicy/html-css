@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor1:black;
+}
+
+body{
+    background-color: var(--cor1);
+    background-image: url('../images/wallpaper/originalWallPaper02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main{
+    position: relative;
+    background-color: transparent;
+
+}
+
+section#fone{
+    position: absolute;
+    background-color: transparent;
+    width: 600px;
+    height: 349px;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    background-image: url('../images/TVImage600px.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+iframe#tela{
+    position: relative;
+    top: 35px;
+    left: 53px;
+
+    width: 380px;
+    height: 255px;
+
+    border-radius: 10px;
+}
+
+section#menu{
+    position: absolute;
+    padding: 17px;
+}
+
+section#menu img{
+    margin: 10px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 4px 3px 12px black;
+
+    /* Faz com que a borda faça parte da caixa de conteúdo.*/
+    box-sizing: border-box;
+}
+
+section#menu img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.37);
+    transform: translate(10%, -10%);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.87);
+    transition: transform .4s, border .14s;
+}
