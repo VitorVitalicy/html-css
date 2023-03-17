@@ -36,6 +36,7 @@ main{
 h2{
     background-image: linear-gradient(to right, rgba(225, 51, 248, 0.596), transparent);
     margin: 10px;
+    padding: 5px;
 }
 
 h3{
@@ -79,10 +80,11 @@ nav{
    
 }
 
-a#next{
+.next{
     text-decoration: solid;
     color: black;
 }
+
 
 nav:hover{
     background-color: blueviolet;

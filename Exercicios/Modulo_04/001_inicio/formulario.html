@@ -10,6 +10,103 @@
     
 </head>
 <body>
-    
+    <header>
+        <h1>O que vamos aprender?</h1>
+        <div>
+            <ul>
+                <li> Iframe </li>
+                <li> Projeto - Redes sociais</li>
+                <li> Formulários</li>
+                <li> MediaQuere</li>
+                <li> Projeto Tela Login 100% responsivo</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h2> Formulários</h2>
+            <ul type="square">
+                <li><p> O principal atributo é o <mark>action=" "</mark> que redireciona as informações de entrada para alguma linguagem de programação.</p></li>
+                <li> 
+                    <p>O atributo method admitie os valores GET e POST:</p>
+                        <ul type="square">
+                            <li><mark>GET</mark> não é usado com <mark>sensitive data</mark> e permite a acoplação de dodos na própria URL com limitação de 2048 caracteres. Não admite mídia.</li>
+                            <li><mark>POST</mark> oferece maior segurança, tamanho <mark>ilimitado</mark> e não mostra informações na URL.</li>
+                            <li><mark style="background-color: red">OBS:</mark> O POST apenas limita a visualização das informações na URl, mas ainda é possível encontrá-las na dinâmica de envio de dados na <mark>inspeção</mark> do navegador.</li>
+                        </ul> 
+                </li>
+            </ul>
+            <br>
+            
+            <p style="text-decoration: underline; color: rgb(76, 79, 245);">Conteúdo de interação com o usuário. Fique com um exemplo abaixo c/ GET: </p>
+
+            <form action="cadastro.php" method="GET">
+                <p>
+                    <label for="inome">Nome</label>
+                    <input type="text" name="nome" id="inome">
+                </p>
+                <p>
+                    <label for="iidade">idade</label>
+                    <input type="text" name="idade" id="iidade">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar Cadastro">
+                </p>
+            </form>
+
+            <br>
+            <p style="text-decoration: underline; color: rgb(76, 79, 245);">Esse é um exemplo sem o assistente de preenchimento e c/ POST.</p>
+
+            <form action="cadastro.php" method="POST" autocomplete="off">
+                <p>
+                    <label for="Inome">Nome</label>
+                    <input type="text" name="nome" id="Inome">
+                </p>
+                <p>
+                    <label for="Iidade">idade</label>
+                    <input type="text" name="idade" id="Iidade">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar Cadastro">
+                </p>
+            </form>
+
+            <br>
+            <p style="text-decoration: underline; color: rgb(76, 79, 245);">Esse é um exemplo com um novo tipo de input: o password + Butão de resetar + atributo required.</p>
+
+            <form action="cadastro.php" method="POST" autocomplete="on">
+                <p>
+                    <label for="iuser">Usuário</label>
+                    <input type="text"
+                        name="user"
+                        id="iuser" 
+                        required 
+                        minlength="4"
+                        maxlength="16" 
+                        size="20"
+                        placeholder="Nome de usuário" 
+                        autocomplete="username">
+                </p>
+                <p>
+                    <label for="isenha">senha</label>
+                    <input type="password" 
+                        name="senha" 
+                        id="isenha" 
+                        required 
+                        minlength="6" 
+                        size="6" 
+                        placeholder="Senha"
+                        autocomplete="current-password">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar Cadastro">
+                    <input type="reset" value="Limpar informações">
+                </p>
+            </form>
+
+            <nav>
+                <a class="next" href="index.html">Página inicial</a>
+            </nav>
+
+    </main>
 </body>
 </html>
