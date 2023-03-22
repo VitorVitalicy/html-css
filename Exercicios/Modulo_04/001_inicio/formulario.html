@@ -15,8 +15,8 @@
         <div>
             <ul>
                 <li> Iframe </li>
-                <li> Projeto - Redes sociais</li>
-                <li> Formulários</li>
+                <li > Projeto - Redes sociais</li>
+                <li class="now"> Formulários</li>
                 <li> MediaQuere</li>
                 <li> Projeto Tela Login 100% responsivo</li>
             </ul>
@@ -103,10 +103,85 @@
                 </p>
             </form>
 
-            <nav>
-                <a class="next" href="index.html">Página inicial</a>
-            </nav>
 
+            <h3 style="margin: 30px; text-decoration: wavy;">Para outros atributos e  funcionalidades do input, acesse <a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank" rel="external">O site do W3Schools</a></h3><br>
+
+            <h3> Saída de dados com ajuda do JavaScript: </h3>
+            <form action="">
+                <label for="inumber">Número 1:</label>
+                <input type="number"
+                    name="number"
+                    id="inumber" 
+                    step="0.1"
+                    min="0"
+                    value="0"
+                    required
+                    oninput="isoma.innerHTML = Number(inumber.value) + Number(inumber2.value)"
+                    placeholder="Digite um número">
+                <br>
+
+                <label for="inumber2">Número 2:</label>
+                <input type="number" 
+                    name="number2" 
+                    id="inumber2" 
+                    step="0.1"
+                    min="0" 
+                    value="0"
+                    required
+                    oninput="isoma.innerHTML = Number(inumber.value) + Number(inumber2.value)"
+                    placeholder="Digite um número">
+                <br>
+
+                <label for="isoma">Soma dos números:</label>
+                <output name="soma" id="isoma">0</output>
+                <br>
+            
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+                
+            </form>
+            <br>
+            <p>Outro Exemplo...</p>
+            <form action="arquivo.php">
+                <label for="irange">Qual foi a sua nota??</label>
+                <input type="range" 
+                name="range" 
+                id="irange" 
+                min="0" 
+                max="10" 
+                step="0.01" 
+                required
+                oninput="inumber.innerHTML = Number(irange.value)">
+                <output name="number" id="inumber">5</output>
+            </form>
+
+            <p style="margin: 10px; border: 2px solid rgb(102, 16, 241); padding: 5px;"><span style="color: red; font-weight: 900;">Tenha Cuidado!</span> Um range muito fracionado pode não funcionar corretamente quando relacionado com a tag output pois a velocidade de arrasto do mouse supera a velocidade de saída da informação.</p>
+
+            <p>Mais um exemplo:</p>
+            <form action="file.php" method="POST" autocomplete="on">
+                <p>
+                    <label for="iano">Digite seu ano de nascimento</label>
+                    <input type="number"
+                        name="ano"
+                        id="iano"
+                        min="1900"
+                        max="2023"
+                        required
+                        oninput="iidade.innerHTML = Number(new Date().getFullYear()) - Number(iano.value)">
+                </p>
+                <p>
+                    <label for="iidade">Sua idade é:</label>
+                    <output id="iidade">0</output>
+                </p>
+
+            </form>
+
+            
+
+            <nav>
+                <a class="return" href="index.html">Página inicial</a>
+                <a class="next" href="mediaqueres.html">MediaQueres</a>
+            </nav>
     </main>
 </body>
 </html>

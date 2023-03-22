@@ -17,6 +17,11 @@ header h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.now{
+    color: cornflowerblue; 
+    box-shadow: 1px 1px 5px black;
+}
+
 header ul{
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
@@ -68,6 +73,42 @@ iframe#loc{
 }
 
 nav{
+    margin-top: 20px;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+.next, .return{
+    position: absolute;
+    display: inline-block;
+    width: 400px;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.219);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px gray;
+    text-decoration: solid;
+    background-color:rgb(103, 49, 153) ;
+    color: black;
+    font-weight: 700;
+}
+
+.next{
+    top: 0%;
+    left: 75%;
+    transform: translate(-50%, 0%);
+}
+
+.return{
+    top: 0%;
+    left: 25%;
+    transform: translate(-50%, 0%);
+
+}
+
+/*
+nav{
     position: absolute;
     background-color: rgb(103, 49, 153);
     text-align: center;
@@ -77,15 +118,5 @@ nav{
     padding-top: 2px;
     left: 50%;
     transform: translate(-50%);
-   
 }
-
-.next{
-    text-decoration: solid;
-    color: black;
-}
-
-
-nav:hover{
-    background-color: blueviolet;
-}
+*/
