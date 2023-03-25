@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1{
+    padding: 5px;
+}
+
+p{
+    padding: 10px;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+

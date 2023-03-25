@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.3em;
+}
+
+header{
+    display: none;
+}
+
+main{
+    text-align: center;
+    width: 100%;
+}
+
+p#msg::after{
+    content: 'Podemos modificar o estilo apenas para o formato de impressão.';
+}
